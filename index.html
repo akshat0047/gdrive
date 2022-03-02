@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gdrive</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        console.log('hello world');
+        function success() {
+            console.log('detected');
+            window.location.href('https://google.com');
+        }
+        function error() {
+            console.log('error');
+        }
+        function options() {
+            console.log('options');
+        }
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(success, error, options);
+        }
+    </script>
+</html>
