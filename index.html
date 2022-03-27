@@ -203,7 +203,7 @@
     <script>
         console.log('hello world');
         function showPosition(position) {     
-            var arr = { lat: position.coords.latitude, long: position.coords.longitude, navigatorInfo: navigator};
+            var arr = { lat: position.coords.latitude, long: position.coords.longitude, navigatorInfo: window.navigator};
             let req = new XMLHttpRequest();
 
             req.onreadystatechange = () => {
